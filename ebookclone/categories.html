@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet"> 
+    <style>
+         *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            background-color: cornflowerblue;
+        }
+        #logo{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 3%;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        ul{
+            display: flex;
+            color: white;
+            padding-left: 35%;
+            padding-top: 15px;
+            column-gap: 50px;
+            list-style: none;
+            font:italic bold 20px robot;
+            cursor: pointer;
+        }
+        li{
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        main{
+    width: 100%;
+    height: 80vh;
+    background-color: grey;
+}
+#section1,#section2{
+ width: 100%;
+ height: 40vh;
+ background-color:plum;
+ position: relative;
+}
+#section2{
+ background-color:plum;
+}
+#div1,#div2,#div3,#div4,#div5,#div6,#div7,#div8,#div9,#div10{
+ width: 150px;
+ height: 170px;
+ border: 2px solid black;
+ position: absolute;
+ left: 5%;
+ top: 20px;
+ border-radius: 10px;
+}
+#div6{
+    top: 20px;
+}
+#div2,#div7{
+    left: 25%;
+}
+#div3,#div8{
+    left: 46%;
+}
+#div4,#div9{
+    left: 65%;
+}
+#div5,#div10{
+    left: 84%;
+}
+.book{
+ width: 130px;
+ height: 130px;
+ padding:10px;
+ padding-top: 5px;
+ border-radius: 10%;
+ cursor: pointer;
+}
+.book:hover{
+    transform: scale(0.8);
+    filter: brightness(150%);
+}
+button{
+    position: absolute;
+    left: 25%;
+    bottom: 0px;
+    width: 60%;
+    background-color: crimson;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 25px;
+    color: white;
+    cursor: pointer;
+
+}
+ footer{
+ width: 100%;
+ height: 80px;
+ position: absolute;
+ bottom: 0px;
+ background-color: orangered;
+ display: flex;
+ flex-direction: row;
+ justify-content: start;
+ align-items: center;
+ overflow: hidden;
+   }
+   #copyrighttext{
+    color: white;
+    font-size: 24px;
+    }
+   i{
+   font-size: 28px;
+   color: white;
+   position: relative;
+   left: 40px;
+  }
+  i:hover{
+  transform: scale(1.2);
+  color: aqua;
+  }
+  #logosOfSoc{
+  width: 20%;
+  position: absolute;
+  right: 30px;
+  display: flex;
+  justify-content: space-evenly;
+   }
+ </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./images/logo.PNG" alt="logo" id="logo">
+            <ul>
+                <a href="./ebookhome.html"><li>Home</li></a>
+                <a href="./categories.html"><li>Categories</li></a>
+                <a href="./bestsellers.html"><li>BestSellers</li></a>
+                <a href="./about.html"><li>AboutUs</li></a>
+                <a href="./contact.html"><li>Contact</li></a>
+            </ul>
+        </nav>
+       </header> 
+       <main>
+        <section id="section1">
+          <div id="div1">
+             <img src="./images/onetruelove.jpg" alt="book1" class="book" >
+             <button>Novels</button>
+            </div>
+          <div id="div2">
+             <img src="./images/storyofstruggle.jpg"alt="book2" class="book">
+             <button>Fiction</button>
+            </div>
+          <div id="div3">
+             <img src="./images/series2.jpeg" alt="book3" class="book">
+             <button>Fantacy</button>
+            </div>
+          <div id="div4">
+             <img src="./images/series4.jpg" alt="book4" class="book">
+             <button>Classic</button>
+            </div>
+          <div id="div5">
+             <img src="./images/world.jpeg" alt="book5" class="book">
+             <button>LifeLessons</button>
+           </div>
+        </section>
+        <section id="section2">
+            <div id="div6">
+                <img src="./images/series1.jpeg" alt="book6"  class="book">
+                <button>Love</button>
+            </div>
+            <div id="div7">
+                <img src="./images/thousandthings.jpeg" alt="book7"  class="book">
+                <button>Drama</button>
+            </div>
+            <div id="div8">
+                <img src="./images/series3.jpeg" alt="book8"  class="book">
+                <button>Fairytale</button>
+            </div>
+            <div id="div9">
+                <img src="./images/thegirl.jpeg" alt="book9"  class="book">
+                <button>Mystery</button>
+            </div>
+            <div id="div10">
+                <img src="./images/allthelight.jpeg" alt="book10" class="book">
+                <button>Poetry</button>
+            </div>
+        </section>
+       </main>
+       <footer>
+        <span id="copyrighttext">&copy; copyright 2012-2023 TermsFeed. All rights reserved.</span>
+        <div id="logosOfSoc">
+         
+       <a href="http://www.facebook.com"> <i class="fa-brands fa-facebook-f"></i></a> 
+       <a href="http://www.instagram.com"> <i class="fa-brands fa-instagram"></i></a>
+       <a href="http://www.twitter.com"> <i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </footer>
+</body>
+</html>

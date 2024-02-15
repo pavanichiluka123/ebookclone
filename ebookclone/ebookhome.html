@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: robot;
+        }
+        body{
+            background-image: url(./images/booklogo.png);
+            background-size: 100% 100vh;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+        header{
+            width: 100%;
+            height: 80px;
+            background-color: rgb(99, 64, 151);
+        }
+        .book{
+            width: 80px;
+            height: 45px;
+            border-radius: 50%;
+            border: 2px solid white;
+            position: absolute;
+            cursor: pointer;
+        }
+        .search{
+            width: 20%;
+            height: 30px;
+            border-radius: 20px;
+            position: absolute;
+            right: 10%;
+            top: 0px;
+            font-size: 20px;
+            padding-left: 5px;
+            cursor: pointer;
+        }
+        i{
+            font-size: 30px;
+            position: absolute;
+            right: 90px;
+            top: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #setting{
+            right: 40px;
+        }
+        #ebook{
+            text-align: center;
+            font-size: 40px;
+            letter-spacing: 2px;
+            text-shadow: 0px 0px 5px white,0px 0px 10px white,0px 0px 15px white,0px 0px 20px white;
+         }
+        nav{
+            width: 100%;
+            height: 30px;
+            background-color:red;
+            position: sticky;
+            top: 20%;
+        }
+        ul{
+            display: flex;
+            color: white;
+            padding-left: 10%;
+            padding-top: 5px;
+            column-gap: 50px;
+            list-style: none;
+            font:italic bold 20px robot;
+            cursor: pointer;
+        }
+        ul:hover{
+        color: cornflowerblue;
+        }
+        .section{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(169, 58, 136);
+            position: sticky;
+            top: 20%;
+            display: flex;
+        }
+        #favbook,#para{
+            position: absolute;
+            left: 38%;
+            font-size: 24px;
+        }
+        #para{
+            bottom: 0px;
+            font-size: 20px;
+        }
+        .browse{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 20px;
+        }
+        .browse:active{
+            color: darkred;
+        }
+        h2,#quote{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            font-size: 50px;
+        }
+        h2{
+         text-shadow: 0px 0px 5px gold,0px 0px 10px gold,0px 0px 15px gold,0px 0px 20px gold;
+        }
+        #quote{ 
+            top: 50%;
+            left: 10%;
+        }
+        #news{
+            position: absolute;
+            top: 22%;
+            right: 5%;
+            width: 15%;
+            height: 30px;
+            border-radius: 20px;
+           font-size: 20px;
+           font-weight: bold;
+           background-color: blue;
+           color: white;
+           cursor: pointer;
+           letter-spacing: 2px;  
+        }
+        footer{
+            width: 100%;
+            height: 110px;
+            background-color: black;
+            position: absolute;
+            bottom: 0px;
+            display: flex;
+            color: white;
+            font-weight: bold;
+        }
+       .icons{
+       display: flex;
+       justify-content: space-around;
+       }
+       #icon1,#icon2,#icon3,#icon4{
+        position: absolute;
+        right: 20%;
+        padding: 30px;
+        color: red;
+       }
+       #icon2{
+        right: 16%;
+       }
+       #icon3{
+        right: 12%;
+       }
+       #icon4{
+        right: 9%;
+       }
+      i:hover{
+        transform: scale(1.2);
+        color: white;
+      }
+       h4{
+         position: absolute;
+         right: 160px;
+         font-size: 20px;
+       }
+       @media only screen and (max-width: 768px) {
+       .grid{
+        background-color:brown;
+    }
+   }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.PNG" alt="book" class="book">
+        <h1 id="ebook">E-Book Store</h1>
+        <i class="fa-solid fa-user" style="color: #18122a;" onclick="openwindow()" title="login here"></i>
+        <a href="https://www.ebooks.com/en-in/"><i class="fa-solid fa-gear" style="color: #18122a;" id="setting" title="setting"></i></a>
+        <nav>
+            <ul>
+                <a href="./ebookhome.html"><li>Home</li></a>
+                <a href="./categories.html"><li>Categories</li></a>
+                <a href="./bestsellers.html"><li>BestSellers</li></a>
+                <a href="./about.html"><li>AboutUs</li></a>
+                <a href="./contact.html"><li>Contact</li></a>
+            </ul>
+            <input type="search" class="search" placeholder="search" title="search here">
+        </nav>
+    </header>
+    <section class="section">
+            <h3 id="favbook">Discover Your Next Favorite Book</h3>
+            <p id="para">Thousand of e-books at your fingerprints</p>
+            <a href="https://www.ebooks.com/en-in/" class="browse">Browse collection</a>
+    </section>
+      <main>
+        <div>
+            <h2>Welcome To E-Book Store</h2>
+            <p id="quote">Good Books Dont Give Up All Their Secrets At Once</p>
+            <button id="news" onclick=newssignup()>Newsletter</button>
+        </div>
+      </main>
+     
+      <footer>
+        <pre>
+            AbOUT US:
+
+         eBooks.com is the longest-established ebookstore 
+         on the web. We offer a vast selection of titles
+         across thousands of categories
+        </pre>
+        <pre>
+            CONTACT US:
+
+            Address:Hyderabad,Kphb
+            Email:ebooks@gmail.com
+            Phone No:9876543210
+        </pre>
+        <pre>
+            POPULAR CATEGORIES:
+
+            Reading Recommendations56
+            For publishers25
+            Inside eBooks.com25
+        </pre>
+        <h4>For More Details:</h4>
+       <a href="http://www.whatsapp.com"><i class="fa-brands fa-whatsapp"  id="icon1" class="icons"></i></a>
+       <a href="http://www.facebook.com"><i class="fa-brands fa-facebook"  id="icon2" class="icons"></i></a>
+       <a href="http://www.twitter.com"><i class="fa-brands fa-twitter"   id="icon3" class="icons"></i></a>
+       <a href="http://www.instagram.com"><i class="fa-brands fa-instagram" id="icon4" class="icons"></i></a>
+      
+      </footer>
+
+    <script>
+       function openwindow()
+       {
+        window.open("./login3.html")
+       }
+      function newssignup()
+      {
+        window.open("./newssignup.html")
+      }
+    </script>
+</body>
+</html>

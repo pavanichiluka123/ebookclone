@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+</head>
+<style>
+     *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            width: 100%;
+            height: 80vh;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            background-color: cornflowerblue;
+        }
+        #logo{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 3%;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        ul{
+            display: flex;
+            color: white;
+            padding-left: 35%;
+            padding-top: 15px;
+            column-gap: 50px;
+            list-style: none;
+            font:italic bold 20px robot;
+            cursor: pointer;
+        }
+        li{
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #books{
+            position: absolute;
+            top: 20%;
+            left: 40%;
+        }
+        footer{
+           width: 100%;
+           height: 80px;
+           position: absolute;
+           bottom: 0px;
+           background-color: orangered;
+           display: flex;
+           flex-direction: row;
+           justify-content: start;
+           align-items: center;
+           overflow: hidden;
+       }
+      #copyrighttext{
+         color: white;
+         font-size: 24px;
+        }
+       i{
+       font-size: 28px;
+       color: white;
+       position: relative;
+       left: 40px;
+      }
+      i:hover{
+        transform: scale(1.2);
+        color: aqua;
+      }
+      #logosOfSoc{
+      width: 20%;
+      position: absolute;
+      right: 30px;
+      display: flex;
+      justify-content: space-evenly;
+     }
+     #about,#contact,#categories{
+        position: absolute;
+        top: 50%;
+        left: 3%;
+        font-weight: bold;
+        font-size: 20px;
+     }
+     #contact{
+      top: 30%;
+     }
+     #categories{
+        top: 70%;
+     }
+     #div{
+        width: 300px;
+        height: 300px;
+       border: 2px solid black;
+        position: absolute;
+        top: 35%;
+        right: 10%;
+        border-radius: 20px;
+     }
+     img{
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+     }
+     
+   
+</style>
+<body>
+    <header>
+        <nav>
+            <img src="./images/logo.PNG" alt="logo" id="logo">
+            <ul>
+                <a href="./ebookhome.html"><li>Home</li></a>
+                <a href="./categories.html"><li>Categories</li></a>
+                <a href="./bestsellers.html"><li>BestSellers</li></a>
+                <a href="./about.html"><li>AboutUs</li></a>
+                <a href="./contact.html"><li>Contact</li></a>
+            </ul>
+        </nav>
+       </header> 
+         <h1 id="books">World With Full Of Books</h1>
+
+         <pre id="about">
+          AbOUT US:
+          eBooks.com is the longest-established ebookstore 
+          on the web. We offer a vast selection of titles
+          across thousands of categories
+        </pre>
+        <pre id="contact">
+           CONTACT US:
+           Address:Hyderabad,Kphb
+           Email:ebooks@gmail.com
+           Phone No:9876543210
+        </pre>
+        <pre id="categories">
+           POPULAR CATEGORIES:
+           Reading Recommendations56
+           For publishers25
+           Inside eBooks.com25
+        </pre>
+        <div id="div">
+            <img src="./images/pngwing.com (4).png" alt="">
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30443.906634312756!2d78.37001646704913!3d17.484187438829636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91b5be1f29c3%3A0xf5af71d23e422328!2sKukatpally%20Housing%20Board%20Colony%2C%20Kukatpally%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1707981826669!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+       <footer>
+        <span id="copyrighttext">&copy; copyright 2012-2023 TermsFeed. All rights reserved.</span>
+        <div id="logosOfSoc">
+         
+        <a href="http://www.facebook.com"> <i class="fa-brands fa-facebook-f"></i></a> 
+        <a href="http://www.instagram.com"> <i class="fa-brands fa-instagram"></i></a> 
+        <a href="http://www.twitter.com"> <i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </footer>
+</body>
+</html>

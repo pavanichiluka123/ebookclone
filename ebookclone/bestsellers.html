@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+</head>
+<style>
+     *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            width: 100%;
+            height: 80vh;
+            background-image: url(./images/pngwing.com\ \(3\).png);
+            background-position: top;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            background-color: cornflowerblue;
+        }
+        #logo{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 3%;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        ul{
+            display: flex;
+            color: white;
+            padding-left: 35%;
+            padding-top: 15px;
+            column-gap: 50px;
+            list-style: none;
+            font:italic bold 20px robot;
+            cursor: pointer;
+        }
+        li{
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #bestsellers{
+            font-size: 40px;
+            position: absolute;
+            left: 35%;
+            top: 20%;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px lightcoral,2px 2px 10px lightcoral,2px 2px 15px lightcoral,2px 2px 20px lightcoral;
+        }
+        .section1{
+            width: 100%;
+            height: 300px;
+            background-color:transparent;
+            position: absolute;
+            top: 38%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .grid{
+           width: 170px;
+           height: 270px;
+           background-color:grey;
+           position: absolute;
+           border-radius: 30px;
+           box-shadow: 2px 2px 5px black,2px 2px 10px black,2px 2px 15px black,2px 2px 20px black ;
+        }
+        .grid:hover{
+            background-color:crimson;
+        }
+        #grid1{
+            right: 86%;
+        }
+        #grid2{
+            right:70%;
+        }
+        #grid3{
+            right: 52%;
+        }
+        #grid4{
+            right: 35%;
+        }
+        #grid5{
+            right: 18%;
+        }
+        #grid6{
+           right: 10px;
+        }
+        .gridimage{
+            width: 130px;
+            height: 170px;
+            padding: 20px;
+            border-radius: 50%;
+        }
+        .gridimage:hover{
+            filter: brightness(120%);
+            transform: scale(0.8);
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        .title{
+            text-align: center;
+            font-size: 20px;
+        }
+        footer{
+           width: 100%;
+           height: 80px;
+           position: absolute;
+           bottom: 0px;
+           background-color: orangered;
+           display: flex;
+           flex-direction: row;
+           justify-content: start;
+           align-items: center;
+           overflow: hidden;
+       }
+      #copyrighttext{
+         color: white;
+         font-size: 24px;
+        }
+       i{
+       font-size: 28px;
+       color: white;
+       position: relative;
+       left: 40px;
+      }
+      i:hover{
+        transform: scale(1.2);
+        color: aqua;
+      }
+      #logosOfSoc{
+      width: 20%;
+      position: absolute;
+      right: 30px;
+      display: flex;
+      justify-content: space-evenly;
+     }
+</style>
+<body>
+    <header>
+        <nav>
+            <img src="./images/logo.PNG" alt="logo" id="logo">
+            <ul>
+                <a href="./ebookhome.html"><li>Home</li></a>
+                <a href="./categories.html"><li>Categories</li></a>
+                <a href="./bestsellers.html"><li>BestSellers</li></a>
+                <a href="./about.html"><li>AboutUs</li></a>
+                <a href="./contact.html"><li>Contact</li></a>
+            </ul>
+        </nav>
+       </header> 
+       <h1 id="bestsellers">BestSellers Books Of 2023</h1>
+       <section class="section1">
+        <div class="grid" id="grid1">
+            <img src="./images/series1.jpeg" alt="book1" class="gridimage">
+            <h1 class="title">Twisted Love</h1>
+        </div>
+        <div class="grid" id="grid2">
+            <img src="./images/series2.jpeg" alt="book2" class="gridimage">
+            <h1 class="title">Twisted Hate</h1>
+        </div>
+        <div class="grid" id="grid3">
+            <img src="./images/series3.jpeg" alt="book3" class="gridimage">
+            <h1 class="title">Twisted Games</h1>
+        </div>
+        <div class="grid" id="grid4">
+            <img src="./images/series4.jpg" alt="book4" class="gridimage">
+            <h1 class="title">Twisted Lies</h1>
+        </div>
+        <div class="grid" id="grid5"> 
+            <img src="./images/world.jpeg" alt="book5" class="gridimage">
+            <h1 class="title">World Was Ours</h1>
+        </div>
+        <div class="grid" id="grid6">
+            <img src="./images/thousandthings.jpeg" alt="book6" class="gridimage">
+            <h1 class="title">Thousand Things</h1>
+        </div>
+      </section>
+
+       <footer>
+        <span id="copyrighttext">&copy; copyright 2012-2023 TermsFeed. All rights reserved.</span>
+        <div id="logosOfSoc">
+         
+            <a href="http://www.facebook.com"> <i class="fa-brands fa-facebook-f"></i></a>
+         
+         <a href="http://www.whatsapp.com"> <i class="fa-brands fa-instagram"></i></a>
+         
+         <a href="http://www.twitter.com"> <i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </footer>
+</body>
+</html>
